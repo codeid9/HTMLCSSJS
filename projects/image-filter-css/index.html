@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Filter | CSS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Image Filter | CSS</h1>
+
+            <div class="tools">
+                <div class="tool-btns">
+                    <button title="Blur" class="filter-btn active">
+                        <span></span>
+                    </button>
+                    <button title="Contrast" class="filter-btn disable">
+                        <span></span>
+                    </button>
+                    <button title="Brightness" class="filter-btn disable">
+                        <span></span>
+                    </button>
+                    <button title="Sepia" class="filter-btn disable">
+                        <span></span>
+                    </button>
+                    <button title="Hue-rotate" class="filter-btn disable">
+                        <span></span>
+                    </button>
+                    <button title="Invert" class="filter-btn disable">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="filter-text">
+                <input
+                    type="range"
+                    class="input-value"
+                    value="5"
+                    placeholder="Blur Value"
+                    min="0"
+                    max="100"
+                />
+                <div>
+                    <code class="code">filter:blur(5px);</code>
+                    <button class="copy-btn">Copy</button>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <input type="range" id="slideFilter" />
+                <div class="slide-line">
+                    <span class="circle"></span>
+                    <span class="triangles"></span>
+                </div>
+                <img src="./img/branches.jpg" alt="image" />
+                <div class="filter"></div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

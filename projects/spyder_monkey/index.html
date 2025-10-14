@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spider Monkey</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <section>
+            <img src="./img/logo.png" height="75px" class="logo" />
+            <div class="left">
+                <h1>Spider Monkey</h1>
+                <p>
+                    Spidermonkey is a small monkey-like alien with four arms,
+                    two legs, three fingers on each hand and three toes on each
+                    foot, blue fur over a dark blue center, and a tail with two
+                    stripes near the tip.
+                </p>
+                <p>
+                    In Alien Force and Ultimate Alien, Spidermonkey had two
+                    pairs of green eyes (making a total of four), he wore the
+                    Omnitrix/Ultimatrix symbol on his chest.
+                </p>
+                <p>
+                    In Heroes United, Spidermonkey looked mostly the same except
+                    his eyes were completely black like a spider, although he
+                    retained the green pupils. The shape of the fur surrounding
+                    the bottom of his face is also slightly different.
+                </p>
+                <button id="getInfo">Get Info</button>
+                <div class="info">
+                    <p>
+                        <strong> Species </strong>
+                        Arachnachimp
+                    </p>
+                    <p>
+                        <strong> Home World </strong>
+                        Aranhascimmia
+                    </p>
+                    <h1>Abilities</h1>
+                    <ul>
+                        <li>Webbing Generation</li>
+                        <li>Web Swinging</li>
+                        <li>Web Ensnarement</li>
+                        <li>Web Constructs</li>
+                        <li>Enhanced Strength</li>
+                        <li>Enhanced Durability</li>
+                        <li>Enhanced Jumping</li>
+                        <li>Enhanced Acrobatics</li>
+                        <li>Enhanced Speed</li>
+                        <li>Enhanced Agility</li>
+                        <li>Enhanced Reflexes</li>
+                        <li>Enhanced Hearing</li>
+                        <li>Wall Scaling</li>
+                        <li>Web Scaling</li>
+                        <li>Prehensile Tail</li>
+                        <li>Prehensile Feet</li>
+                        <li>Bipedalism</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./img/spider-monkey1.png" />
+            </div>
+        </section>
+        <img src="./img/spyder-monkey.png" class="bg-img">
+    </body>
+    <script>
+        document.getElementById('getInfo').onclick=function (){
+            document.getElementsByClassName('info')[0].classList.toggle('active');
+        }
+    </script>
+</html>

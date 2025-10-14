@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Neon Card</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100dvh;
+                width: 100%;
+                background: #252525;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Courier New", Courier, monospace;
+            }
+            .card-wrapper {
+                position: relative;
+                width: 280px;
+                border-radius: 12px;
+                padding: 10px;
+                background: #000;
+                overflow: hidden;
+            }
+
+            .gradient-border {
+                height: 150%;
+                width: 100%;
+                background: conic-gradient(
+                    red 0deg 90deg,
+                    transparent 90deg 180deg,
+                    lime 180deg 270deg,
+                    transparent 270deg 360deg
+                );
+                filter: blur(20px);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                animation: animate-border 10s linear infinite;
+            }
+            @keyframes animate-border {
+                to {
+                    transform: translate(-50%, -50%) rotate(1turn);
+                }
+            }
+            .card-wrapper .card {
+                position: relative;
+                z-index: 10;
+                width: 100%;
+                border-radius: 8px;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 7px;
+                padding: 2rem 0.5rem;
+            }
+            .card-wrapper .card h2 {
+                color: #555;
+            }
+            .card-wrapper .card p {
+                text-align: justify;
+                color: #777;
+            }
+            .card-wrapper .card img {
+                height: 100px;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card-wrapper">
+            <div class="gradient-border"></div>
+            <div class="card">
+                <img src="./img.jpg" alt="user-img" />
+                <h1>John</h1>
+                <h2>Game Dev</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, adipisicing elit. Deserunt
+                    voluptas itaque tempore vitae aut. Sit repudiandae id .
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

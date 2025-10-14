@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, rgb(119, 0, 255), rgb(174, 0, 255));
+}
+section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    z-index: 10;
+}
+.logo {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    filter: drop-shadow(0 0 5px black);
+}
+section > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.left {
+    padding-left: 2rem;
+}
+.left > h1 {
+    margin-bottom: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #222;
+}
+.left p {
+    margin-bottom: 10px;
+    color: #eee;
+}
+.left button {
+    width: 130px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.left button:hover {
+    transform: translateY(-4px);
+}
+.left button:active {
+    transform: scale(0.9);
+}
+.left .info {
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    transform: translateX(100%);
+    width: 280px;
+    z-index: 100;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1rem 0.5rem;
+    backdrop-filter: blur(8px);
+    color: #eee;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.left .info h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.left .info p {
+    text-align: center;
+}
+.left .info p strong{
+    color: white;
+}
+.left .info ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+.left .info.active {
+    right: 1rem;
+    transform: translateX(0%);
+}
+.right img {
+    position: relative;
+    height: 70%;
+    filter: drop-shadow(0 0 5px #222);
+}
+.bg-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column-reverse;
+    }
+    section > div {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .bg-img{
+        opacity: 0.3;
+    }
+    .right img {
+        height: 90%;
+    }
+    .left{
+        padding: 0 2rem;
+        padding-bottom: 1rem;
+    }
+}

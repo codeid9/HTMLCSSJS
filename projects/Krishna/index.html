@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Krishna</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="./img/morpankh.png" />
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#Home">Home</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Stories">Stories</a>
+                </li>
+                <li>
+                    <a href="#Thoughts">Thoughts</a>
+                </li>
+                <li>
+                    <a href="#Ask"
+                        >Ask <span class="nav-text">Krishna</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Home" class="home">
+            <div class="text">
+                <h1>
+                    Welcome to the <br />
+                    World of <br />
+                    Little Krishna
+                </h1>
+                <p>
+                    A divine journey into the playful, powerful, <br />
+                    and enchanting childhood of Lord Krishna.
+                </p>
+            </div>
+            <img
+                src="./img/little_krishna.png"
+                alt="little_krishna"
+                class="little-krishna"
+            />
+        </section>
+        <section id="About" class="about">
+            <img src="./img/little_krishna1.jpg" />
+            <div class="text">
+                <h2>Who is Little Krishna?</h2>
+                <p>
+                    Little Krishna is the beloved child of Vrindavan, known for
+                    his mischievous smile, divine miracles, and boundless love.
+                    From stealing butter to lifting Govardhan Hill, his stories
+                    inspire joy and devotion across generations.
+                </p>
+            </div>
+        </section>
+        <section id="Stories" class="stories">
+            <div class="text">
+                <h2>Divine Tales</h2>
+                <ul>
+                    <li>
+                        <strong>Makhan Chor:</strong> The butter thief who stole
+                        hearts
+                    </li>
+                    <li>
+                        <strong>Kaliya Mardan:</strong> Dancing on the serpent
+                        to protect Vrindavan
+                    </li>
+                    <li>
+                        <strong>Govardhan Leela:</strong> Lifting a mountain to
+                        shelter his people
+                    </li>
+                    <li>
+                        <strong>Raas Leela:</strong> The divine dance of love
+                        and unity
+                    </li>
+                </ul>
+            </div>
+            <img src="./img/krishna_stories.png" />
+        </section>
+        <section id="Thoughts" class="thoughts">
+            <div class="img-frame">
+                <img src="./img/krishna_thoughts.png" />
+            </div>
+            <div class="text">
+                <h2>Words of Wisdom</h2>
+                <blockquote>
+                    “Whenever dharma declines and adharma rises, I manifest
+                    myself.” — Bhagavad Gita 4.7
+                </blockquote>
+                <blockquote>
+                    “Do everything you have to do, but not with greed, not with
+                    ego, not with lust, not with envy.” — Lord Krishna
+                </blockquote>
+            </div>
+        </section>
+        <section id="Ask" class="ask">
+            <h2>Ask Krishna</h2>
+            <p>
+                Click the conch to receive a divine message from Little Krishna!
+            </p>
+            <button onclick="showMessage()">🔔</button>
+            <p id="krishnaMessage"></p>
+        </section>
+        <footer>
+            <p>
+                Made with devotion in India 🇮🇳 <span>|</span>
+                <br style="display: none" />
+                Jai Shri Krishna 🙏
+            </p>
+        </footer>
+    </body>
+    <script src="app.js"></script>
+</html>

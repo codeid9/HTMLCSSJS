@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <span class="heading">Memory Game</span>
+            <p class="info">
+                <span class="score">score:0</span>
+                <span class="attempts">attempts:0</span>
+            </p>
+        </div>
+        <div class="welcome">
+            <h1>Welcome</h1>
+            <select id="gameLevel">
+                <option value="2" selected>Easy</option>
+                <option value="4" >Medium</option>
+                <option value="6">Hard</option>
+                <option value="8" class="impossible">Impposible</option>
+            </select>
+            <button onclick="init()">Play</button>
+        </div>
+      
+        <main class="board"></main>
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project With HTML | CSS | JS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main id="main"></main>
+    </body>
+    <script>
+        const main = document.getElementById("main");
+        (async () => {
+            const res = await fetch("./data.json");
+            const data = await res.json();
+            renderCards(data.data);
+        })();
+
+        function renderCards(data) {
+            data.forEach(({url,img}) => {
+                main.innerHTML += `
+                <div class="card">
+                    <img src="${img}">
+                    <button>
+                        <a href="${url}" target="_blank">View</a>
+                    </button>
+                </div>
+                `;
+            });
+        }
+    </script>
+</html>
